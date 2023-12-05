@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="gitlab" fetch="https://gitlab.com" />
+  <project name="dablado/android_device_xiaomi_sm8150-common" path="device/xiaomi/sm8150-common" remote="github" revision="lineage-20-dev" />
+  <project name="dablado/android_device_xiaomi_cepheus" path="device/xiaomi/cepheus" remote="github" revision="lineage-20-dev" />
+  <project name="LineageOS/android_hardware_xiaomi" path="hardware/xiaomi" remote="github" revision="lineage-20" />  
+  <project name="dablado/android_kernel_xiaomi_sm8150-legacy" path="kernel/xiaomi/sm8150" remote="github" revision="lineage-20-dev" /> 
+  <project name="dablado/proprietary_vendor_xiaomi_cepheus" path="vendor/xiaomi/cepheus" remote="github" revision="lineage-20-dev" />
+  <project name="dablado/proprietary_vendor_xiaomi_sm8150-common" path="vendor/xiaomi/sm8150-common" remote="github" revision="lineage-20-dev" />
+</manifest>
