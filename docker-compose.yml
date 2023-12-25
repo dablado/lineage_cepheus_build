@@ -1,6 +1,6 @@
 version: '3.3'
 services:
-  docker-lineage-cicd:
+  lineage:
     environment:
       - BRANCH_NAME=lineage-20.0
       - DEVICE_LIST=cepheus
@@ -15,5 +15,8 @@ services:
       - ~/lineage/cache:/srv/ccache
       - ~/lineage/keys:/srv/keys
       - ~/lineage/manifests:/srv/local_manifests
-    image: lineageos4microg/docker-lineage-cicd
+    build:
+     context: .
+     dockerfile: Dockerfile
+
 

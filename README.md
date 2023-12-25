@@ -10,4 +10,4 @@ docker-compose up -d
 
 - Check trace logs during build
 
-docker-compose exec docker-lineage-cicd tail -f LINEAGE_20_0/.repo/TRACE_FILE
+docker-compose exec lineage tail -f LINEAGE_20_0/.repo/TRACE_FILE
