@@ -10,7 +10,6 @@ services:
       - INCLUDE_PROPRIETARY=false
       - DELETE_OLD_ZIPS=1
       - DELETE_OLD_LOGS=1
-      - CLEAN_AFTER_BUILD=false
     volumes:
       - ~/lineage/src:/srv/src
       - ~/lineage/zips:/srv/zips
