@@ -1,6 +1,7 @@
 version: '3.3'
 services:
-  docker-lineage-cicd:
+  lineage:
+    image: lineageos4microg/docker-lineage-cicd:latest
     environment:
       - BRANCH_NAME=lineage-20.0
       - DEVICE_LIST=cepheus
@@ -8,6 +9,8 @@ services:
       - PARALLEL_JOBS=8
       - TZ=Europe/Madrid
       - INCLUDE_PROPRIETARY=false
+      - DELETE_OLD_ZIPS=1
+      - DELETE_OLD_LOGS=
     volumes:
       - ~/lineage/src:/srv/src
       - ~/lineage/zips:/srv/zips
@@ -15,5 +18,5 @@ services:
       - ~/lineage/cache:/srv/ccache
       - ~/lineage/keys:/srv/keys
       - ~/lineage/manifests:/srv/local_manifests
-    image: lineageos4microg/docker-lineage-cicd
+
 
